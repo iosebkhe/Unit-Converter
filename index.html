@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="container">
+      <input type="checkbox" name="theme" id="checkbox" class="checkbox" />
+      <label class="theme-label" for="checkbox">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="0.5"
+          stroke="currentColor"
+          class="w-6 h-6 icon moon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+          />
+        </svg>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6 icon sun"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+          />
+        </svg>
+
+        <div class="ball"></div>
+      </label>
+
+      <div class="input-box">
+        <h1 class="header">Metric/Imperial Unit Converter</h1>
+        <div class="input-relative">
+          <span class="span-input" id="span-input"></span>
+          <input
+            class="input autosize-input"
+            type="number"
+            id="input"
+            value="1"
+          />
+        </div>
+        <button class="btn" id="btn">Convert!</button>
+      </div>
+
+      <div class="result-box">
+        <div class="result">
+          <h3 class="header-result">Length (Meter/Feet)</h3>
+          <p class="text-result" id="length">
+            <strong>1</strong> Meter = <strong>3.281</strong> Feet |
+            <strong>1</strong> Feet = <strong>0.305</strong> Meter
+          </p>
+        </div>
+
+        <div class="result">
+          <h3 class="header-result">Volume (Liters/Gallons)</h3>
+          <p class="text-result" id="volume">
+            <strong>1</strong> Liter = <strong>0.264</strong> Gallons |
+            <strong>1</strong> Gallons = <strong>3.785</strong> Liter
+          </p>
+        </div>
+
+        <div class="result">
+          <h3 class="header-result">Mass (Kilograms/Pounds)</h3>
+          <p class="text-result" id="mass">
+            <strong>1</strong> kilo = <strong>2.205</strong> Pound |
+            <strong>1</strong> Pound = <strong>0.454</strong> Kilo
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
